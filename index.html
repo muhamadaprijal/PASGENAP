@@ -36,9 +36,7 @@
     </tbody>
   </table>
 
-  <div class="d-flex justify-content-center">
-    <img src="loader.gif" style="width: 15em; display: block" id="loader">
-  </div>
+ 
 
   <div class="d-flex justify-content-center">
   </div>
@@ -91,7 +89,9 @@
           '<td>' + data.Nama + '</td>' +
      '</td>' + data.Alamat + '<td>'+
      '</td>' + data.NoTlpn +'<td>'+
-     '</td>' + data.Kelas + '</td>' + '<td>' + data.Keterangan + '</td>' +
+     '</td>' + data.Kelas + '</td>' + 
+     '<td>' + data.Keterangan + '</td>' +
+     
           '<td class="stack-up">' +
           ' <a href="#" class="btn btn-warning link-ubah"  data="' +
           data.id +
@@ -113,7 +113,7 @@
         window.location.replace('ubah-produk.html?docId=' + $(this).attr('data'));
       })
 
-      $('#loader').hide();
+      //$('#loader').hide();
 
     });
   </script>
